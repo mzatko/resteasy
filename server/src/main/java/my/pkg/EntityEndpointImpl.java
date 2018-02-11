@@ -23,6 +23,7 @@ public abstract class EntityEndpointImpl<ENTITY extends AbstractEntity> implemen
     public void create(ENTITY entity) {
         ENTITY created = entityDAO.create(entity);
         servletResponseContext.setHeader(HttpHeaders.LOCATION, servletRequestContext.getRequestURL().append('/').append(created.getId()).toString());
+        servletResponseContext.setHeader(HttpHeaders.CONTENT_ID, created.getId().toString());
     }
 
     @Override
