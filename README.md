@@ -11,6 +11,6 @@ entity is very simple:
         "concreteEntityProperty": "BlahBlahBlahBlah"
 }
 
-to start client (while server still running) which creates an entity but fails to read (deserialize json) it from server then
-in client module run
+to start client (while server still running) which creates an entity but fails to read (deserialize json) it from server. Run
+in client module
 > mvn clean install -DmainClass=my.pkg.Client  exec:java
