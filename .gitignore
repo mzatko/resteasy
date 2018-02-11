@@ -1,0 +1,22 @@
+# common
+**/*.log
+#**/*.csv
+**/*ignoreMe*
+
+# maven
+**/target/
+**/bin/
+**/dependency-reduced-pom.xml
+**/pom.xml.versionsBackup
+
+# eclipse
+**/.settings/
+**/.classpath
+**/.project
+**/.tern-project
+**/.externalToolBuilders/
+**/maven-eclipse.xml
+
+# idea
+**/.idea/
+**/*.iml
